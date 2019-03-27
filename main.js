@@ -8,21 +8,28 @@ function diceWare(){
      
         for(j=1;j<=5;j++){
         
-        var result = Math.floor(Math.random() * 6) + 1; /* generating 5 times random number (from 1 to 6) which gonna get us something like for ex. 11111 - and this is gonna used to get world from bealeWorldList */
+        var result = Math.floor(Math.random() * 6) + 1; /* generating 5 times random number (from 1 to 6) which gonna get us something like for ex. 11111 - and this is gonna used to get world from bealeWordList */
         result.toString;
         cont += result;
         }
 
-        console.log(language);
-        var bealeResult = bealeWorldList(cont);
-        bealeResult.toString;
-        what += bealeResult +" ";     
+        if(language == "zh"){
+            var genResult = chineseWordList(cont);
+            genResult.toString;
+            what += genResult +" ";
+        }
+        else{
+        //console.log(language);
+        var genResult = bealeWordList(cont);
+        genResult.toString;
+        what += genResult +" ";
+        }  
     }
 
     document.getElementById("gen-result-p").innerHTML = what;
 }
 
-function bealeWorldList (worldNum){
+function bealeWordList (worldNum){
 
     var beale = [];
     
@@ -7803,7 +7810,6 @@ function bealeWorldList (worldNum){
     beale[66665] =	"??";
     beale[66666] =	"@";
     
-    console.log(beale[worldNum]);
     return beale[worldNum];
 }
 

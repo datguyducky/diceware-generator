@@ -6,7 +6,9 @@
     <title>Diceware PROJECT v0.1</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+
+    <script src="chinese.js"></script>
+    <script src="main.js"></script> <!-- SCRIPT TO GENERATE PASSPHRASE-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
@@ -30,9 +32,19 @@
                 <div id="language-content">
                     <p>Language of word-list: 
                         <select id="languages">
-                            <option value="eng">🇺🇸 English (US)</option>
-                            <option value="pl">🇵🇱 Polish</option>
+                            <option value="zh">🇨🇳 Chinese</option>
+                            <option value="eng" selected>🇺🇸 English (US)</option>
+                            <option value="fr">🇫🇷 French</option>
+                            <option value="de">🇩🇪 German</option>
+                            <option value="it">🇮🇹 Italian</option>
                             <option value="jpn">🇯🇵 Japanese</option>
+                            <option value="no">🇳🇴 Norwegian</option>
+                            <option value="pl">🇵🇱 Polish</option>
+                            <option value="pt">🇵🇹 Portuguese</option>
+                            <option value="ru">🇷🇺 Russian</option>
+                            <option value="es">🇪🇸 Spanish</option>
+                            <option value="sv">🇸🇪 Swedish</option>          
+                            <!-- http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
                         </select>
                     </p>
                 </div>
@@ -40,7 +52,7 @@
             </div>
 
             <div id="gen-result">
-                <p id="gen-result-p">Here generated passphrase will show up.</p>
+                <p id="gen-result-p">Here, generated passphrase gonna show up.</p>
             </div>
             
         </main>
