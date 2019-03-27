@@ -18,6 +18,11 @@ function diceWare(){
             genResult.toString;
             what += genResult +" ";
         }
+        else if(language == "fr"){
+            var genResult = frenchWordList(cont);
+            genResult.toString;
+            what += genResult +" ";
+        }
         else{
         //console.log(language);
         var genResult = bealeWordList(cont);
