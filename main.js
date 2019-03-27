@@ -3,6 +3,12 @@ function diceWare(){
     var language = document.getElementById('languages').value;
     var what = "";
 
+    if(numPhrase < 6 || numPhrase > 128){
+        document.getElementById("gen-result-p").innerHTML = "Can't generate passphrase. Check if you want to generate more than 5 words and less than 129 words. ";
+    }
+
+
+    else{
     for(i=1;i<=numPhrase;i++){ /* loop for generating random set of number (from 1 to 6). Length of loop depends on user input. */
         var cont = "";
      
@@ -23,6 +29,21 @@ function diceWare(){
             genResult.toString;
             what += genResult +" ";
         }
+        else if(language == "de"){
+            var genResult = germanWordList(cont);
+            genResult.toString;
+            what += genResult +" ";
+        }
+        else if(language == "it"){
+            var genResult = italianWordList(cont);
+            genResult.toString;
+            what += genResult +" ";
+        }
+        else if(language == "jpn"){
+            var genResult = japaneseWordList(cont);
+            genResult.toString;
+            what += genResult +" ";
+        }
         else{
         //console.log(language);
         var genResult = bealeWordList(cont);
@@ -32,6 +53,7 @@ function diceWare(){
     }
 
     document.getElementById("gen-result-p").innerHTML = what;
+    }
 }
 
 function bealeWordList (worldNum){
