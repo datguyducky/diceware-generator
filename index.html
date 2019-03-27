@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diceware PROJECT v0.1</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div id="box">
+        <header>
+            <nav>
+                <h1><i class="fas fa-dice"></i> DICEWAREproject</h1>
+                <ul>
+                    <a href="#" class="active"><li>GENERATE</li></a>
+                    <a href="about.html"><li>ABOUT</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p id="text">Diceware is Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, doloremque ipsa ipsum magnam maxime quibusdam unde aut eius vero consectetur accusamus iste minima officia id mollitia corrupti totam omnis earum incidunt eveniet vitae facere dolorum possimus at! Reiciendis, corporis voluptatum.</p>
+            <div id="gen-content">
+                <p>How many words do you want to generate?</p>
+                <input type="number" id="num-phrase" min="6" max="128"/>
+                <p class="error"></p>
+                
+                <div id="language-content">
+                    <p>Language of word-list: 
+                        <select id="languages">
+                            <option value="eng">🇺🇸 English (US)</option>
+                            <option value="pl">🇵🇱 Polish</option>
+                            <option value="jpn">🇯🇵 Japanese</option>
+                        </select>
+                    </p>
+                </div>
+                <input type="submit" value="Generate" onclick="diceWare()"/>
+            </div>
+
+            <div id="gen-result">
+                <p id="gen-result-p">Here generated passphrase will show up.</p>
+            </div>
+            
+        </main>
+        <footer>
+            <p>Created by @Sheepy || All rights reserved 2019 || Github: datguysheepy</p>
+        </footer>
+    </div>
+
+</body>
+</html>
