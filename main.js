@@ -44,6 +44,21 @@ function diceWare(){
             genResult.toString;
             what += genResult +" ";
         }
+        else if(language == "no"){
+            var genResult = norwegianWordList(cont);
+            genResult.toString;
+            what += genResult +" ";
+        }
+        else if(language == "pl"){
+            var genResult = polishWordList(cont);
+            genResult.toString;
+            what += genResult +" ";
+        }
+        else if(language == "pt"){
+            var genResult = portugueseWordList(cont);
+            genResult.toString;
+            what += genResult +" ";
+        }
         else{
         //console.log(language);
         var genResult = bealeWordList(cont);
