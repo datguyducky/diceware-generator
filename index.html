@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DICEWAREproject</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+    -->
     <link rel="stylesheet" href="style.css">
 
     <!-- LANGUAGE WORD-LISTS -->
@@ -23,9 +25,63 @@
     <!---->       
 
     <script src="main.js"></script> <!-- SCRIPT TO GENERATE PASSPHRASE-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
 </head>
 <body>
+    <div id="content-box">
+        <header>
+            <h1><i class="fas fa-dice"></i> Diceware Generator</h1>
+            <h2>create strong passphrases with one click!</h2>
+        </header>
+        <nav>
+            <ul>
+                <a href="#" class="active"><li>Generate</li></a>
+                <li class="nav-sep">/</li>
+                <a href="#"><li>How-to</li></a>
+                <li class="nav-sep">/</li>
+                <a href="about.html"><li>About</li></a>
+            </ul>
+        </nav>
+        <main>
+            <h4 id="warning">warning! This is only simple project and I can't guarantee 100% safety of generated passphrases. To add to that on <a href="http://world.std.com/~reinhold/diceware.html" title="Diceware Passphrase homepage">Diceware Passphrase Home Page</a> they advise against <a href="http://world.std.com/%7Ereinhold/dicewarefaq.html#electronic" title="Computer/Electronics to generate Diceware passphrases?">using computer to generate Diceware passphrases.</a> So, because of that <strong>I advise against using generated here passphrases.</strong></h4>
+
+            <div id="gen-content">
+                <label to="number">How many words generate? <input type="number" id="num-phrase" min="6" max="128"/></label>
+                <p id="error">Minimum required number of words is 6, maximum 128</p>
+                    
+                <div id="language-content">
+                    <p>Word-list language: 
+                    <select id="languages">
+                        <option value="zh">🇨🇳 Chinese</option>
+                        <option value="eng" selected>🇺🇸 English (US)</option>
+                        <option value="fr">🇫🇷 French</option>
+                        <option value="de">🇩🇪 German</option>
+                        <option value="it">🇮🇹 Italian</option>
+                        <option value="jpn">🇯🇵 Japanese</option>
+                        <option value="no">🇳🇴 Norwegian</option>
+                        <option value="pl">🇵🇱 Polish</option>
+                        <option value="pt">🇵🇹 Portuguese</option>
+                        <option value="ru">🇷🇺 Russian</option>
+                        <option value="es">🇪🇸 Spanish</option>
+                        <option value="sv">🇸🇪 Swedish</option>          
+                        <!-- http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry--> 
+                    </select>
+                    </p>
+                </div>
+
+                <input type="submit" value="Generate" onclick="diceWare()"/>
+            </div>
+    
+            <div id="gen-result">
+                <p id="gen-result-p">Here, generated passphrase gonna show up.</p>
+            </div>
+        </main>
+    </div>
+    
+    
+    
+    
+    <!--
     <div id="box">
         <header>
             <nav>
@@ -58,7 +114,7 @@
                             <option value="ru">🇷🇺 Russian</option>
                             <option value="es">🇪🇸 Spanish</option>
                             <option value="sv">🇸🇪 Swedish</option>          
-                            <!-- http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                            <!-- http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry 
                         </select>
                     </p>
                 </div>
@@ -73,7 +129,7 @@
         <footer>
             <p>Created by @Sheepy || Github: datguysheepy</p>
         </footer>
-    </div>
+    </div>-->
 
 </body>
 </html>

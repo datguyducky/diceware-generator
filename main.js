@@ -4,7 +4,7 @@ function diceWare(){
     var what = "";
 
     if(numPhrase < 6 || numPhrase > 128){
-        document.getElementById("gen-result-p").innerHTML = "Can't generate passphrase. Minimum of words is 6 and maximum is 128. Check if you entered number in this range.";
+        document.getElementById("error").style.display = "Block";
     }
 
     else{

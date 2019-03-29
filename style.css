@@ -1,9 +1,130 @@
 html, body {
     padding: 0;
     margin: 0;
-    font-family: monospace;
-    background-color: #f2f2f2;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
 }
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+#content-box{
+    width: 960px;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+header{
+    margin-top: 60px;
+    height: 15vh;
+    width: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    color: #333;
+}
+
+header h2{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    height: 6vh;
+    font-size: 1.1rem;
+    flex-direction: row;
+    color: #333;
+    align-items: center;
+}
+
+nav a{
+    float: left;
+    padding: 2rem 1rem;
+    color: #7c7c7c;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul, li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a:hover{
+    color: #333;
+}
+
+nav a:hover li{
+    border-bottom: 1px dashed #333;
+}
+
+.nav-sep{
+    float: left;
+    padding: 2rem 1rem;
+}
+
+.active{
+    color: #333333;
+}
+
+main #warning{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #333;
+    color: #dbdbdb;
+}
+
+main #warning a{
+    border-bottom: 1px solid white;
+    color: #dbdbdb;
+}
+
+main #warning a:hover{
+    border-bottom: 1px dashed white;
+}
+
+main #warning strong{
+    color: orangered;
+}
+
+main #gen-content, #gen-result {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #gen-content input{
+    margin-left: 8px;
+}
+
+#error {
+    display: none;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: orangered;
+    padding: 0;
+    margin-top: 6px;
+}
+
+/*
 
 #box{
     width: 960px;
@@ -137,7 +258,7 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* STYLING FOR ABOUT PAGE */
+/* STYLING FOR ABOUT PAGE 
 main#about-page{
     display: flex;
     justify-content: center;
@@ -186,4 +307,4 @@ main#about-page strong {
 
 #sources-content {
     margin-bottom: 8px;
-}
+}*/
