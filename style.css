@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 html, body {
     padding: 0;
     margin: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #fdfdfd;
     color: #333;
 }
@@ -148,7 +150,8 @@ input[type='submit']{
 }
 
 input[type='submit']:hover{
-    text-transform: lowercase;
+    background-color: #333;
+    color: #fdfdfd;
 }
 
 select {
@@ -164,6 +167,13 @@ select {
     text-transform: uppercase;
     margin-bottom: 0;
 }
+
+/* 
+ELEMENTY Z 'ORANGERED'
+#gen-result p{}
+#error{}
+main #warning strong
+*/
 
 #gen-result p {
     padding: 0;

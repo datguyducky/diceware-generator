@@ -1,3 +1,11 @@
+function randColor(){
+    var color = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6); //creating random color in hex
+    var elements = document.getElementsByClassName("colors"); //getting all elements with class "colors"
+    for(i=0; i<elements.length; i++){
+        elements[i].style.color = color; //aplying generated above color to all elements with class "colors";
+    }
+}
+
 function diceWare(){
     var numPhrase = document.getElementById('num-phrase').value; // how many words user wants to generate
     var language = document.getElementById('languages').value; // language for word list 
