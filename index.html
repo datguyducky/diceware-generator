@@ -22,7 +22,7 @@
     <script src="main.js"></script> <!-- SCRIPT TO GENERATE PASSPHRASE-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<body onload="randColor()">
+<body onload="randColor()"><!--getting random color for: 'error', some text in 'warning' and for generated passphrase-->
     <div id="content-box">
         <header>
             <h1><i class="fas fa-dice"></i> Diceware Generator</h1>
@@ -40,13 +40,13 @@
 
             <div id="gen-content">
                 <label to="number">How many words to generate? <input type="number" id="num-phrase" min="6" max="128"/></label>
-                <p id="error" class="colors">Minimum required number of words is 6, maximum 128</p>
+                <p id="error" class="colors">Minimum required number of words is 6, maximum 128</p><!-- error -->
                     
                 <div id="language-content">
                     <p>Word-list language: 
                     <select id="languages">
                         <option value="zh">🇨🇳 Chinese</option>
-                        <option value="eng" selected>🇺🇸 English (US)</option>
+                        <option value="eng" selected>🇺🇸 English (US)</option> <!-- selected by default -->
                         <option value="fr">🇫🇷 French</option>
                         <option value="de">🇩🇪 German</option>
                         <option value="it">🇮🇹 Italian</option>
@@ -62,17 +62,24 @@
                     </p>
                 </div>
 
-                <input type="submit" value="Generate" onclick="diceWare()"/>
+                <input type="submit" value="Generate" onclick="diceWare()"/> <!-- click to generate passphrase -->
             </div>
     
             <div id="gen-result">
                 <h4>generated passphrase is:</h4>
-                <p id="gen-result-p" class="colors"></p>
+                <p id="gen-result-p" class="colors"></p><!-- placeholder for generated passphrase -->
             </div>
         </main>
     </div>
     <footer>
-        <p>Created by @Sheepy || Github: datguysheepy</p>
+        <p>
+            <span id="copyright">
+                &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+            </span> 
+            || Last updated: 03.30.2019 || <a href="https://github.com/datguysheepy/" class="colors">Github: datguysheepy</a></p>
     </footer>
 </body>
 </html>
