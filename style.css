@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -13,12 +14,12 @@ a {
     text-decoration: none;
 }
 
-h1{
+h1 {
     margin: 0;
     padding: 0;
 }
 
-#content-box{
+#content-box {
     width: 960px;
     min-height: 100vh;
     display: flex;
@@ -26,7 +27,7 @@ h1{
     flex-direction: column;
 }
 
-header{
+header {
     margin-top: 60px;
     height: 15vh;
     width: 960px;
@@ -38,12 +39,12 @@ header{
     color: #333;
 }
 
-header h2{
+header h2 {
     font-size: 1.3rem;
     text-transform: uppercase;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     height: 6vh;
@@ -53,7 +54,7 @@ nav{
     align-items: center;
 }
 
-nav a{
+nav a {
     float: left;
     padding: 2rem 1rem;
     color: #7c7c7c;
@@ -68,49 +69,50 @@ nav ul {
     padding: 0;
 }
 
-nav li{
+nav li {
     margin: 0;
-    padding: 0;  
+    padding: 0;
 }
 
-nav a:hover{
+nav a:hover {
     color: #333;
 }
 
-nav a:hover li{
+nav a:hover li {
     border-bottom: 1px dashed #333;
 }
 
-.nav-sep{
+.nav-sep {
     float: left;
     padding: 2rem 1rem;
 }
 
-.active{
+.active {
     color: #333333;
 }
 
-main #warning{
+main #warning {
     text-transform: uppercase;
     text-align: center;
     background-color: #333;
     color: #dbdbdb;
 }
 
-main #warning a{
+main #warning a {
     border-bottom: 1px solid #fdfdfd;
     color: #dbdbdb;
 }
 
-main #warning a:hover{
+main #warning a:hover {
     border-bottom: 1px dashed #fdfdfd;
 }
 
-main #warning strong{
+main #warning strong {
     color: orangered;
 }
 
-main #gen-content, #gen-result {
+main #gen-content,
+#gen-result {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -118,7 +120,7 @@ main #gen-content, #gen-result {
     font-size: 1.4rem;
 }
 
-main #gen-content input{
+main #gen-content input {
     margin-left: 8px;
 }
 
@@ -132,14 +134,14 @@ main #gen-content input{
     margin-top: 6px;
 }
 
-input[type='number']{
+input[type='number'] {
     background-color: inherit;
     border: 1px solid #333;
     text-align: center;
     width: 64px;
 }
 
-input[type='submit']{
+input[type='submit'] {
     background-color: inherit;
     height: 36px;
     border: 2px solid #333;
@@ -149,7 +151,7 @@ input[type='submit']{
     cursor: pointer;
 }
 
-input[type='submit']:hover{
+input[type='submit']:hover {
     background-color: #333;
     color: #fdfdfd;
 }
@@ -192,17 +194,17 @@ footer a:hover {
     margin: 0 24px;
 }
 
-#about-content h3{
+#about-content h3 {
     font-size: 1.4rem;
     margin: 16px 0;
 }
 
-#about-content p{
+#about-content p {
     margin: 0;
     padding: 0;
 }
 
-#word-list p{
+#word-list p {
     margin: 4px 0;
 }
 
@@ -211,10 +213,10 @@ footer a:hover {
     margin: 0 16px;
 }
 
-#sources-content li{
+#sources-content li {
     padding: 4px 0;
 }
 
-#sources-content a:hover{
+#sources-content a:hover {
     border-bottom: 1px dashed #333;
 }
