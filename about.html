@@ -10,6 +10,111 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
+    <div id="content-box">
+        <header>
+            <h1><i class="fas fa-dice"></i> Diceware Generator</h1>
+            <h2>create strong passphrases with one click!</h2>
+        </header>
+        <nav>
+            <ul>
+                <a href="index.html"><li>Generate</li></a>
+                <li class="nav-sep">/</li>
+                <a href="#" class="active"><li>About</li></a>
+            </ul>
+        </nav>
+        <main>
+            <div id="about-content">
+                <h3>What is Diceware?</h3>
+                <p>
+                    Diceware™ is a method for picking passphrases that uses ordinary dice to select words at random from a special list called the Diceware Word List. Each word in the list is preceded by a five digit number. All the digits are between one and six, allowing you to use the outcomes of five dice rolls to select a word from the list.
+                    <div id="word-list">
+                    <p>Here is a short excerpt from the English Diceware word list:</p>
+<pre>
+16655 clause
+16656 claw
+16661 clay
+16662 clean
+16663 clear
+16664 cleat
+16665 cleft 
+</pre>
+<pre>
+16666 clerk
+21111 cliche
+21112 click
+21113 cliff
+21114 climb
+21115 clime
+21116 cling
+</pre>
+<pre>
+21121 clink
+21122 clint
+21123 clio
+21124 clip
+21125 clive
+21126 cloak
+21131 clock   
+</pre>
+                    </div>
+                </p>
+                <div style="clear:both;"></div>
+                <h3>Example:</h3>
+                <p>Suppose you want a six word passphrase, as we recommend for most users. You will need 6 times 5 or 30 dice rolls. Let's say they come out as:</p>
+<pre>
+1, 6, 6, 6, 5, 1, 5, 6, 5, 3, 5, 6, 3, 2, 2, 3, 5, 6, 
+1, 6, 6, 5, 2, 2, 4, 6, 4, 3, 2, and 6.
+</pre>
+
+                <p>Write down the results on a scrap of paper in groups of five rolls:</p>
+<pre>
+1 6 6 6 5 
+1 5 6 5 3 
+5 6 3 2 2 
+3 5 6 1 6
+6 5 2 2 4 
+6 4 3 2 6
+</pre>
+                
+                <p>You then look up each group of five rolls in the Diceware word list by finding the number in the list and writing down the word next to the number:</p>
+<pre>
+1 6 6 6 5 cleft
+1 5 6 5 3 cam
+5 6 3 2 2 synod
+3 5 6 1 6 lacy
+6 5 2 2 4 yr
+6 4 3 2 6 wok
+</pre>
+
+                <p>Your passphrase would then be: <strong>cleft cam synod lacy yr wok</strong></p>
+
+                <h3>Sources: </h3>
+
+                <div id="sources-content">
+                    <ul>
+                        <li><a href="#" title="Original Diceware site">Original Diceware site</a></li>
+                        <li><a href="#" title="Diceware FAQ">Diceware FAQ</a></li>
+                        <li><a href="https://github.com/cfbao/chinese-diceware" title="Chinese word lists">Chinese word lists</a></li>
+                        <li><a href="http://weber.fi.eu.org/software/diceware/src/francais.wordlist.asc" title="French word list">French word list</a></li>
+                        <li><a href="http://world.std.com/%7Ereinhold/diceware_german.txt" title="German word list">German word list</a></li>
+                        <li><a href="https://www.taringamberini.com/downloads/diceware_it_IT/lista-di-parole-diceware-in-italiano/3/word_list_diceware_it-IT-3.txt" title="Italian word list">Italian word list</a></li>
+                        <li><a href="http://s3.amazonaws.com/dotclue.org/diceware_jp.txt" title="Japanese word list">Japanese word list</a></li>
+                        <li><a href="https://0101.no/diceware/diceware_nb_NO.txt" title="Norwegian word list">Norwegian word list</a></li>
+                        <li><a href="https://web.archive.org/web/20130420042549/http://drfugazi.eu.org/sites/drfugazi.eu.org/files/dicelist-pl.txt" title="Polish word list">Polish word list</a></li>
+                        <li><a href="https://gist.github.com/patxipierce/3a96b1927b844ce47c04a242651bafc2" title="Portuguese word list">Portuguese word list</a></li>
+                        <li><a href="world.std.com/%7Ereinhold/diceware.ru.zip" title="Russian word list">Russian word list</a></li>
+                        <li><a href="http://world.std.com/~reinhold/diceware_espanol/DW-Espanol-1.txt" title="Spanish word list">Spanish word list</a></li>
+                        <li><a href="https://x42.com/diceware/diceware-sv.txt" title="Swedish word list">Swedish word list</a></li>
+                    </ul>
+                </div>   
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>Created by @Sheepy || Github: datguysheepy</p>
+    </footer>
+
+    <!--
     <div id="box">
         <header>
             <nav>
@@ -110,7 +215,7 @@
         <footer>
             <p>Created by @Sheepy || Github: datguysheepy</p>
         </footer>
-    </div>
+    </div>-->
 
 </body>
 </html>

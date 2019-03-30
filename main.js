@@ -4,10 +4,11 @@ function diceWare(){
     var what = "";
 
     if(numPhrase < 6 || numPhrase > 128){
-        document.getElementById("error").style.display = "Block";
+        document.getElementById("error").style.display = "block";
     }
 
     else{
+        document.getElementById("error").style.display = "none";
     for(i=1;i<=numPhrase;i++){ // loop for generating random set of number (from 1 to 6). Length of loop depends on user input.
         var cont = "";
      

@@ -18,7 +18,7 @@ h1{
 
 #content-box{
     width: 960px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     margin: 0 auto;
     flex-direction: column;
@@ -60,10 +60,15 @@ nav a{
     text-transform: uppercase;
 }
 
-nav ul, li{
+nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    list-style-type: none;
+}
+
+nav li{
+    margin: 0;
+    padding: 0;  
 }
 
 nav a:hover{
@@ -108,6 +113,7 @@ main #gen-content, #gen-result {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-size: 1.4rem;
 }
 
 main #gen-content input{
@@ -123,6 +129,92 @@ main #gen-content input{
     padding: 0;
     margin-top: 6px;
 }
+
+input[type='number']{
+    background-color: inherit;
+    border: 1px solid #333;
+    text-align: center;
+    width: 64px;
+}
+
+input[type='submit']{
+    background-color: inherit;
+    height: 36px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 2px 0px #b1b1b1;
+    cursor: pointer;
+}
+
+input[type='submit']:hover{
+    text-transform: lowercase;
+}
+
+select {
+    background-color: inherit;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+#gen-result h4 {
+    padding: 0;
+    margin-top: 24px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#gen-result p {
+    padding: 0;
+    margin: 4px 0;
+    color: orangered;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+footer {
+    border-top: 1px solid #e8e8e8;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-content {
+    margin: 0 24px;
+}
+
+#about-content h3{
+    font-size: 1.4rem;
+    margin: 16px 0;
+}
+
+#about-content p{
+    margin: 0;
+    padding: 0;
+}
+
+#word-list p{
+    margin: 4px 0;
+}
+
+#word-list pre {
+    float: left;
+    margin: 0 16px;
+}
+
+#sources-content li{
+    padding: 4px 0;
+}
+
+#sources-content a:hover{
+    border-bottom: 1px dashed #333;
+}
+
+
+
+
 
 /*
 
@@ -256,55 +348,6 @@ footer {
 
 footer p {
     font-size: 0.9rem;
-}
+} */
 
-/* STYLING FOR ABOUT PAGE 
-main#about-page{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-size: 16px;
-    flex-direction: column;
-}
-
-#about-content{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 2rem 4rem; 
-}
-
-
-main#about-page h2{
-    margin: 8px 0;
-}
-
-main#about-page p,h2,pre {
-    padding: 0;
-    margin: 0;
-}
-
-main#about-page pre {
-    float: left;
-    font-size: 10px;
-    margin: 8px;
-}
-
-main#about-page strong {
-    background-color: #111;
-    color: orange;
-}
-
-#sources-content a {
-    color: orange;
-    background-color: #111;
-}
-
-#sources-content a:hover {
-    color: white;
-}
-
-#sources-content {
-    margin-bottom: 8px;
-}*/
+ /* STYLING FOR ABOUT PAGE */
