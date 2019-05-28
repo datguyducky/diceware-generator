@@ -1,4 +1,4 @@
-# Diceware generator
+# Diceware generator 🎲
 Using weak password or passphrase is still most common mistake users do when securing their accounts and because of that I decided to make this website to show people that creating strong passwords/passphrases isn't really that hard. Memorizing them don't need to be hard and I will show it to you be using method called Diceware.
 
 ***Please remember that this project is only way to show people that there is way to create strong and memorizable passphrase and because of that I can't recommend using generated here passphrases as a way to secure your accounts.***
