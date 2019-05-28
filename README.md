@@ -53,7 +53,7 @@ These 3 steps above only describes what user sees but there isn't any explanatio
 * [Norwegian word list](https://0101.no/diceware/diceware_nb_NO.txt).
 * [Polish word list](https://web.archive.org/web/20130420042549/http://drfugazi.eu.org/sites/drfugazi.eu.org/files/dicelist-pl.txt).
 * [Portuguese word list](https://gist.github.com/patxipierce/3a96b1927b844ce47c04a242651bafc2).
-* [Russian word list]().
+* [Russian word list](world.std.com/%7Ereinhold/diceware.ru.zip).
 * [Spanish word list](http://world.std.com/~reinhold/diceware_espanol/DW-Espanol-1.txt).
 * [Swedish word list](https://x42.com/diceware/diceware-sv.txt).
 
