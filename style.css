@@ -5,7 +5,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #fdfdfd;
+    color: #fdfdfd;
     color: #333;
 }
 
@@ -52,6 +52,7 @@ nav {
     flex-direction: row;
     color: #333;
     align-items: center;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 nav a {
@@ -94,21 +95,8 @@ nav a:hover li {
 main #warning {
     text-transform: uppercase;
     text-align: center;
-    background-color: #333;
-    color: #dbdbdb;
-}
-
-main #warning a {
-    border-bottom: 1px solid #fdfdfd;
-    color: #dbdbdb;
-}
-
-main #warning a:hover {
-    border-bottom: 1px dashed #fdfdfd;
-}
-
-main #warning strong {
-    color: orangered;
+    font-size: 1.2rem;
+    color: #3255c3;
 }
 
 main #gen-content,
@@ -117,7 +105,7 @@ main #gen-content,
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 main #gen-content input {
@@ -129,7 +117,7 @@ main #gen-content input {
     font-size: 0.7rem;
     text-transform: uppercase;
     font-weight: bold;
-    color: orangered;
+    color: #3255c3;
     padding: 0;
     margin-top: 6px;
 }
@@ -142,17 +130,18 @@ input[type='number'] {
 }
 
 input[type='submit'] {
-    background-color: inherit;
+    background-color: #333;
     height: 36px;
     border: 2px solid #333;
     border-radius: 12px;
     text-transform: uppercase;
     box-shadow: 2px 2px 2px 0px #b1b1b1;
     cursor: pointer;
+    color: #fdfdfd;
 }
 
 input[type='submit']:hover {
-    background-color: #333;
+    background-color: #3255c3;
     color: #fdfdfd;
 }
 
@@ -165,7 +154,7 @@ select {
 #gen-result h4 {
     padding: 0;
     margin-top: 24px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     margin-bottom: 0;
 }
@@ -173,9 +162,10 @@ select {
 #gen-result p {
     padding: 0;
     margin: 4px 0;
-    color: orangered;
+    color: #3255c3;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    padding: 1.2rem;
 }
 
 footer {
@@ -192,6 +182,9 @@ footer a:hover {
 
 #about-content {
     margin: 0 24px;
+    display: grid;
+    grid-template-columns: 68% 1fr;
+    padding: 24px 12px;
 }
 
 #about-content h3 {
@@ -204,19 +197,21 @@ footer a:hover {
     padding: 0;
 }
 
-#word-list p {
-    margin: 4px 0;
+#about-right{
+    font-size: 1.2rem;
+    padding: 0 3rem;
 }
 
-#word-list pre {
-    float: left;
-    margin: 0 16px;
+#about-right ul {
+    margin: 0;
+    padding: 0;
 }
 
-#sources-content li {
+#about-right li {
     padding: 4px 0;
+    list-style-type: circle;
 }
 
-#sources-content a:hover {
+#about-right a:hover {
     border-bottom: 1px dashed #333;
 }
