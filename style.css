@@ -79,17 +79,17 @@ nav a:hover {
     color: #333;
 }
 
-nav a:hover li {
-    border-bottom: 1px dashed #333;
-}
-
 .nav-sep {
     float: left;
     padding: 2rem 1rem;
 }
 
 .active {
-    color: #333333;
+    color: #333;
+}
+
+#copy-btn {
+    display: none;
 }
 
 main #warning {
@@ -99,8 +99,7 @@ main #warning {
     color: #3255c3;
 }
 
-main #gen-content,
-#gen-result {
+main #gen-content, #gen-result {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -124,9 +123,11 @@ main #gen-content input {
 
 input[type='number'] {
     background-color: inherit;
-    border: 1px solid #333;
+    border: 1px solid #7c7c7c;
     text-align: center;
     width: 64px;
+    border-radius: 4px;
+    height: 24px;
 }
 
 input[type='submit'] {
@@ -147,14 +148,21 @@ input[type='submit']:hover {
 
 select {
     background-color: inherit;
-    border: 1px solid #333;
+    border: 1px solid #7c7c7c;
     text-align: center;
+    border-radius: 4px;
+    line-height: 28px;
+    height: 28px;
+}
+
+#gen-result {
+    margin-top: 18px;
 }
 
 #gen-result h4 {
     padding: 0;
     margin-top: 24px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     margin-bottom: 0;
 }
@@ -162,10 +170,10 @@ select {
 #gen-result p {
     padding: 0;
     margin: 4px 0;
-    color: #3255c3;
+    color: #7c7c7c;
     font-weight: bold;
-    font-size: 1.4rem;
-    padding: 1.2rem;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 footer {
@@ -212,6 +220,10 @@ footer a:hover {
     list-style-type: circle;
 }
 
+#about-right a {
+    color: #7c7c7c;
+}
+
 #about-right a:hover {
-    border-bottom: 1px dashed #333;
+    color: #333;
 }

@@ -43,15 +43,15 @@
             </ul>
         </nav>
         <main>
-            <h4 id="warning">Have in mind that this is simple project and I can't ensure the security of passphrases generated here, please be careful with using them. </h4>
+            <h4 id="warning">Have in mind that this is simple project and I can't ensure the security of passphrases generated here, please have this in mind if you choose to use them.</h4>
 
             <div id="gen-content">
-                <label to="number">How many words to generate? <input type="number" id="num-phrase" min="6"
+                <label to="number">Passphrase Length? <input type="number" id="num-phrase" min="6"
                         max="128" /></label>
                 <p id="error" class="colors">Minimum required number of words is 6, maximum 128</p><!-- error -->
 
                 <div id="language-content">
-                    <p>Word-list language:
+                    <p>Passphrase Language:
                         <select id="languages">
                             <option value="zh">🇨🇳 Chinese</option>
                             <option value="eng" selected>🇺🇸 English (US)</option> <!-- selected by default -->
@@ -74,8 +74,10 @@
             </div>
 
             <div id="gen-result">
-                <h4>generated passphrase is:</h4>
+                <h4>your passphrase: </h4>
                 <p id="gen-result-p" class="colors"></p><!-- placeholder for generated passphrase -->
+                
+                <input type="submit" value="COPY" id="copy-btn"/>                
             </div>
         </main>
     </div>
