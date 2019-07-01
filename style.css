@@ -188,7 +188,45 @@ h4#gen {
     box-shadow: 2px 0px 2px 0px #b1b1b1;
   }
 
-
+dfn {
+  position: relative;
+  
+}
+dfn::after {
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  top: 22px; 
+  left: -50%;
+  opacity: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  font-style: normal;
+  background: #333;
+  color: #fff;
+  pointer-events: none; /* This prevents the box from apearing when hovered. */
+  transition: opacity 250ms, top 250ms;
+  border-radius: 5px;
+}
+dfn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px; left: 20px;
+  opacity: 0;
+  width: 0; height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: #333;
+  transition: opacity 250ms, top 250ms;
+  opacity: 0.8;
+}
+dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+dfn:hover::after,
+dfn:hover::before {opacity: 1;}
+dfn:hover::after {top: 210%;}
+dfn:hover::before {top: 160%;}
 
 footer {
     border-top: 1px solid #7c7c7c;

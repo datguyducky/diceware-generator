@@ -71,12 +71,17 @@
                 </div>
             </div>
             <div class="tooltip">
-                <button class="btn" onclick="diceWare()" onmouseover="tooltipText('gen')" title="Generate passphrase">
+                <dfn data-info="Generate passphrase">
+                    <button class="btn" onclick="diceWare()" onmouseover="tooltipText('gen')">
                     <i class="fas fa-sync"></i>
-                </button> 
-                <button class="btn" onclick="copyText()" onmouseover="tooltipText('clip')" title="Copy text">
+                    </button>
+                </dfn>
+
+                <dfn data-info="Copy to clipboard">
+                    <button class="btn" onclick="copyText()" onmouseover="tooltipText('clip')" title="Copy text">
                     <i class="far fa-clipboard"></i>
-                </button>
+                    </button>
+                </dfn>
             </div>
             <div id="gen-result">
                 <!-- placeholder for generated passphrase -->
