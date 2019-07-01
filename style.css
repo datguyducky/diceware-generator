@@ -88,15 +88,15 @@ nav a:hover {
     color: #333;
 }
 
-#copy-btn {
-    display: none;
+main {
+    text-align: center;
 }
 
 main #warning {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.2rem;
-    color: #3255c3;
+    color: #333;
 }
 
 main #gen-content, #gen-result {
@@ -130,22 +130,6 @@ input[type='number'] {
     height: 24px;
 }
 
-input[type='submit'] {
-    background-color: #333;
-    height: 36px;
-    border: 2px solid #333;
-    border-radius: 12px;
-    text-transform: uppercase;
-    box-shadow: 2px 2px 2px 0px #b1b1b1;
-    cursor: pointer;
-    color: #fdfdfd;
-}
-
-input[type='submit']:hover {
-    background-color: #3255c3;
-    color: #fdfdfd;
-}
-
 select {
     background-color: inherit;
     border: 1px solid #7c7c7c;
@@ -155,29 +139,59 @@ select {
     height: 28px;
 }
 
-#gen-result {
-    margin-top: 18px;
-}
-
-#gen-result h4 {
+h4#gen {
     padding: 0;
-    margin-top: 24px;
+    margin-top: 32px;
     font-size: 1.3rem;
     text-transform: uppercase;
     margin-bottom: 0;
+    text-align: center;
 }
 
 #gen-result p {
     padding: 0;
-    margin: 4px 0;
-    color: #7c7c7c;
+    margin: 0;
+    color: #3255c3;
     font-weight: bold;
     font-size: 1.3rem;
     text-align: center;
+   
+    min-height: 32px;
+    
+    padding: 12px;
 }
 
+.btn {
+    color: #cfcfcf;
+    background-color: #333;
+    border: 1px solid #333;
+    text-align: center;
+    border-radius: 6px;
+    height: 46px;
+    width: 46px;
+    font-size: 18px;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 2px 4px 2px 0px #b1b1b1;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fdfdfd;
+}
+
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 2px 0px 2px 0px #b1b1b1;
+  }
+
+
+
 footer {
-    border-top: 1px solid #e8e8e8;
+    border-top: 1px solid #7c7c7c;
     height: 120px;
     display: flex;
     justify-content: center;

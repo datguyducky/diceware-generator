@@ -69,15 +69,18 @@
                         </select>
                     </p>
                 </div>
-
-                <input type="submit" value="Generate" onclick="diceWare()" /> <!-- click to generate passphrase -->
             </div>
-
+            <div class="tooltip">
+                <button class="btn" onclick="diceWare()" onmouseover="tooltipText('gen')" title="Generate passphrase">
+                    <i class="fas fa-sync"></i>
+                </button> 
+                <button class="btn" onclick="copyText()" onmouseover="tooltipText('clip')" title="Copy text">
+                    <i class="far fa-clipboard"></i>
+                </button>
+            </div>
             <div id="gen-result">
-                <h4>your passphrase: </h4>
-                <p id="gen-result-p" class="colors"></p><!-- placeholder for generated passphrase -->
-                
-                <input type="submit" value="COPY" id="copy-btn"/>                
+                <!-- placeholder for generated passphrase -->
+                <p id="gen-result-p" class="colors">YOUR PASSPHRASE</p>                    
             </div>
         </main>
     </div>

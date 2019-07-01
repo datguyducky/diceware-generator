@@ -1,4 +1,5 @@
 function diceWare() {
+    //generating passphrase part
     var numPhrase = document.getElementById('num-phrase').value; // how many words user wants to generate
     var language = document.getElementById('languages').value; // language for word list 
     var what = "";
@@ -69,6 +70,33 @@ function diceWare() {
             //console.log(language);
         }
 
-        document.getElementById("gen-result-p").innerHTML = what; //Writing generated words on page.
+        //display generated passphrase on page
+        document.getElementById("gen-result-p").innerHTML = what;
     }
 }
+
+function copyText() {
+    //copying text to clipboard part
+    var text = document.getElementById("gen-result-p").innerText; //element to copy text from
+
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+
+    console.log(elem.value);
+}
+
+function tooltipText(a) {
+    var tooltip = document.getElementById("my-tooltip");
+    var tooltip2 = document.getElementById("my-tooltip2");
+   
+    if(a == 'gen'){
+        tooltip.innerHTML = "Generate passphrase";
+    }
+    else{
+        tooltip2.innerHTML = "Copy to clipboard";
+    }
+  }
