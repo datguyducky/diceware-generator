@@ -5,8 +5,6 @@ Using weak password or passphrase is still most common mistake users do when sec
   <img src="img/page.png" alt="How this page looks" width="960">
 </p>
 
-***Please remember that this project is only way to show people that there is way to create strong and memorizable passphrase and because of that I can't recommend using generated here passphrases as a way to secure your accounts.***
-
 ## What indicates strong passphrase?
 * Long enough to be hard to guess.
 * Not a famous quotation from literature, holy books, et cetera.
