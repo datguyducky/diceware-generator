@@ -45,12 +45,15 @@
             </ul>
         </nav>
         <main>
-            <h4 id="warning">Have in mind that this is simple project and I can't ensure the security of passphrases generated here, please have this in mind if you choose to use them.</h4>
+            <h4 id="warning">
+                Have in mind that this is simple project and I can't ensure the security of passphrases
+                generated here, please have this in mind if you choose to use them.
+            </h4>
 
             <div id="gen-content">
-                <label to="number">Passphrase Length? <input type="number" id="num-phrase" min="6"
-                        max="128" value="6"/></label>
-                <p id="error" class="colors">Minimum required number of words is 6, maximum 128</p><!-- error which is shown up if user type less than 6 and more than 128-->
+                <label to="number">Passphrase Length? <input type="number" id="num-phrase" min="6" max="128" value="6" /></label>
+                <!-- error which is shown up if user type less than 6 and more than 128-->
+                <p id="error" class="colors">Minimum required number of words is 6, maximum 128</p>   
 
                 <div id="language-content">
                     <p>Passphrase Language:
@@ -75,25 +78,25 @@
             <div class="tooltip">
                 <dfn data-info="Generate passphrase">
                     <button class="btn" onclick="diceWare()">
-                    <i class="fas fa-sync"></i>
+                        <i class="fas fa-sync"></i>
                     </button>
                 </dfn>
 
                 <dfn data-info="Copy to clipboard">
                     <button class="btn" onclick="copyText()">
-                    <i class="far fa-clipboard"></i>
+                        <i class="far fa-clipboard"></i>
                     </button>
                 </dfn>
             </div>
             <div id="gen-result">
                 <!-- placeholder for generated passphrase -->
-                <p id="gen-result-p" class="colors">YOUR PASSPHRASE</p>                    
+                <p id="gen-result-p" class="colors">YOUR PASSPHRASE</p>
             </div>
         </main>
     </div>
     <footer>
         <p>
-            <span id="copyright">&copy;<script>document.write(new Date().getFullYear());//getting current year</script></span>
+            <span id="copyright">&copy;<script>document.write(new Date().getFullYear()); //getting current year</script></span>
             <a href="https://github.com/datguysheepy/" class="colors">|| Github: datguysheepy</a>
         </p>
     </footer>
