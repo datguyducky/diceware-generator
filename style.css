@@ -210,6 +210,7 @@ dfn::after {
   transition: opacity 250ms, top 250ms;
   border-radius: 5px;
 }
+
 dfn::before {
   content: '';
   display: block;
@@ -222,6 +223,7 @@ dfn::before {
   transition: opacity 250ms, top 250ms;
   opacity: 0.8;
 }
+
 dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
 dfn:hover::after,
 dfn:hover::before {opacity: 1;}
@@ -245,6 +247,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: 68% 1fr;
     padding: 24px 12px;
+    text-align: left;
 }
 
 #about-content h3 {
@@ -255,6 +258,14 @@ footer a:hover {
 #about-content p {
     margin: 0;
     padding: 0;
+}
+
+#about-left p {
+    text-align: left;
+}
+
+#world-list pre {
+    float: left;
 }
 
 #about-right{
