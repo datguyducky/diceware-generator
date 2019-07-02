@@ -7,6 +7,8 @@
     <title>Diceware Generator</title>
     <link rel="stylesheet" href="style.css">
     <!-- LANGUAGE WORD-LISTS -->
+    <!-- this need to be here - thanks to it functions in main.js work for getting word from array-->
+    <!-- in every file there is Diceware language word-list stored in array that starts at 111111 and ends at 666666-->
     <script src="languages/chinese.js"></script>
     <script src="languages/english.js"></script>
     <script src="languages/french.js"></script>
@@ -20,12 +22,12 @@
     <script src="languages/spanish.js"></script>
     <script src="languages/swedish.js"></script>
     <!-- SCRIPT TO GENERATE PASSPHRASE -->
+    <!-- getting user input from number input and select tag - which we use to run script for x times and use specifis world-list language file to show user x randomly selected words from that specific file.-->
     <script src="main.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
-    <!--getting random color for: 'error', some text in 'warning' and for generated passphrase-->
     <div id="content-box">
         <header>
             <h1><i class="fas fa-dice"></i> Diceware Generator</h1>
@@ -47,8 +49,8 @@
 
             <div id="gen-content">
                 <label to="number">Passphrase Length? <input type="number" id="num-phrase" min="6"
-                        max="128" /></label>
-                <p id="error" class="colors">Minimum required number of words is 6, maximum 128</p><!-- error -->
+                        max="128" value="6"/></label>
+                <p id="error" class="colors">Minimum required number of words is 6, maximum 128</p><!-- error which is shown up if user type less than 6 and more than 128-->
 
                 <div id="language-content">
                     <p>Passphrase Language:
@@ -65,20 +67,20 @@
                             <option value="ru">🇷🇺 Russian</option>
                             <option value="es">🇪🇸 Spanish</option>
                             <option value="sv">🇸🇪 Swedish</option>
-                            <!-- http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry-->
                         </select>
                     </p>
                 </div>
             </div>
+            <!-- SHOWING TOOLTIP ABOVE GENERATE AND COPY BUTTONS-->
             <div class="tooltip">
                 <dfn data-info="Generate passphrase">
-                    <button class="btn" onclick="diceWare()" onmouseover="tooltipText('gen')">
+                    <button class="btn" onclick="diceWare()">
                     <i class="fas fa-sync"></i>
                     </button>
                 </dfn>
 
                 <dfn data-info="Copy to clipboard">
-                    <button class="btn" onclick="copyText()" onmouseover="tooltipText('clip')">
+                    <button class="btn" onclick="copyText()">
                     <i class="far fa-clipboard"></i>
                     </button>
                 </dfn>
@@ -91,13 +93,9 @@
     </div>
     <footer>
         <p>
-            <span id="copyright">
-                &copy;
-                <script>
-                    document.write(new Date().getFullYear());
-                </script>
-            </span>
-            || Last update: 03.30.2019 || <a href="https://github.com/datguysheepy/" class="colors">Github: datguysheepy</a></p>
+            <span id="copyright">&copy;<script>document.write(new Date().getFullYear());//getting current year</script></span>
+            <a href="https://github.com/datguysheepy/" class="colors">|| Github: datguysheepy</a>
+        </p>
     </footer>
 </body>
 
