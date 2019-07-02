@@ -194,7 +194,7 @@ dfn::after {
   content: attr(data-info);
   display: inline;
   position: absolute;
-  top: 22px; 
+  top: -22px; 
   left: -50%;
   opacity: 0;
   font-size: 14px;
@@ -217,7 +217,7 @@ dfn::before {
   opacity: 0;
   width: 0; height: 0;
   border: solid transparent 5px;
-  border-bottom-color: #333;
+  border-top-color: #333;
   transition: opacity 250ms, top 250ms;
   opacity: 0.8;
 }
@@ -225,8 +225,8 @@ dfn::before {
 dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
 dfn:hover::after,
 dfn:hover::before {opacity: 1;}
-dfn:hover::after {top: 210%;}
-dfn:hover::before {top: 160%;}
+dfn:hover::after {top: -78px;}
+dfn:hover::before {top: -22px;}
 
 footer {
     border-top: 1px solid #7c7c7c;
