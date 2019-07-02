@@ -244,15 +244,21 @@ dfn:hover::before {
 }
 
 footer {
-    border-top: 1px solid #7c7c7c;
-    height: 120px;
+    height: 62px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 960px;
+    margin: 0 auto;
+    border-top: 1px solid #e8e8e8;  
+}
+
+footer a {
+    color: #3255c3
 }
 
 footer a:hover {
-    border-bottom: 1px dashed #333;
+    color: #7c7c7c;
 }
 
 #about-content {
@@ -265,7 +271,13 @@ footer a:hover {
 
 #about-content h3 {
     font-size: 1.4rem;
-    margin: 16px 0;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+#about-content h4 {
+    font-size: 1.1rem;
+    margin: 8px 0;
 }
 
 #about-content p {
@@ -279,6 +291,10 @@ footer a:hover {
 
 #about-left a {
     color: #3255c3;
+}
+
+#about-left a:hover {
+    color: #7c7c7c;
 }
 
 #word-list {
@@ -311,9 +327,9 @@ footer a:hover {
 }
 
 #about-right a {
-    color: #7c7c7c;
+    color: #3255c3;
 }
 
 #about-right a:hover {
-    color: #333;
+    color: #7c7c7c;
 }
