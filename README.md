@@ -1,5 +1,5 @@
 # Diceware generator 🎲
-Using weak password or passphrase is still most common mistake users do when securing their accounts and because of that I decided to make this website to show people that creating strong passwords/passphrases isn't really that hard. Memorizing them don't need to be hard and I will show it to you be using method called Diceware.
+Using weak password or passphrase is still most common mistake users do when securing their accounts and because of that I decided to make this website to show people that creating and memorizing strong passwords/passphrases isn't really that hard.
 
 <p align="center">
   <img src="img/page.png" alt="How this page looks" width="960">
@@ -23,7 +23,7 @@ If you wonder how this website uses Diceware to generate passphrases for users t
 
 1. Then, when he hit the button to generate it - in no time is shows below that button.
 
-These 3 steps above only describes what user sees but there isn't any explanation how all of this 'magic' works behind the scenes, so here it is:
+Everything described below happens as a part of "behind the scenes" - which is really only our small script, that generates and shows passphrases to user.
 
 1. Let's start with saying that **everything described below happens just after clicking button by user** (for ex. we know how many words user want to have generated after he hit 'generate' button, not when he is done typing it).
 
@@ -31,13 +31,13 @@ These 3 steps above only describes what user sees but there isn't any explanatio
 
 1. Then we **"role our dice" 5 times** (number can be from 1-6, and end result is something like for ex. '11111'.)
 
-1. After we have our number ('11111' in this example) we **check which language** user choose and then we 'go' to relevant file (every language have own file).
+1. After we have our number ('11111' in this example) we **check which language** user choosed and then we 'go' to relevant file (every language have own it file).
 
 1. In every language file there is **Array which which starts with lowest possible number (11111) that we can get from "rolling our dice" and ends with highest possible number (66666)**. To every number there's a word/symbol/number asigned. So our passphrase is set of this worlds/symbols or numbers we got from language file.
 
 1. Currently we only have 1 world generated and we need at least 5 more. So we need to **repeat steps 3-5 as many times as user choose worlds**.
 
-1. After all of this we finally have our freshly generated passphrase. :)
+1. After all of this we finally have our freshly generated passphrase and we can show it to user below 'Generate' button. :)
 
 ## Sources:
 
