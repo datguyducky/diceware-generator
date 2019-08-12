@@ -7,7 +7,7 @@
     <title>Diceware Generator</title>
     <link rel="stylesheet" href="style.css">
     <!-- LANGUAGE WORD-LISTS -->
-    <!-- this need to be here - thanks to it functions in main.js work for getting word from array-->
+    <!-- this need to be here - to get word for main.js-->
     <!-- in every file there is Diceware language word-list stored in array that starts at 111111 and ends at 666666-->
     <script src="languages/chinese.js"></script>
     <script src="languages/english.js"></script>
@@ -22,7 +22,7 @@
     <script src="languages/spanish.js"></script>
     <script src="languages/swedish.js"></script>
     <!-- SCRIPT TO GENERATE PASSPHRASE -->
-    <!-- getting user input from number input and select tag - which we use to run script for x times and use specifis world-list language file to show user x randomly selected words from that specific file.-->
+    <!-- getting user input from number input and select tag - which we use to run script for x times and use specific world-list language file to show user x randomly selected words from that specific file.-->
     <script src="main.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -96,7 +96,7 @@
     </div>
     <footer>
         <p>
-            <span id="copyright">&copy;<script>document.write(new Date().getFullYear()); //getting current year</script> || </span>
+            <span id="copyright">Copyright &copy;<script>document.write(new Date().getFullYear()); //getting current year</script> || </span>
             <a href="https://github.com/datguysheepy/" class="colors"> Github: datguysheepy</a>
         </p>
     </footer>

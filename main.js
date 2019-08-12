@@ -8,7 +8,7 @@ function diceWare() {
         document.getElementById("error").style.display = "block"; //displaying error if user typed less than 6 or more than 128
     } else {
         document.getElementById("error").style.display = "none";
-        for (i = 1; i <= numPhrase; i++) { // loop for generating random set of number (from 1 to 6). Length of loop depends on user input
+        for (i = 1; i <= numPhrase; i++) { // loop for generating random set of numbers (from 1 to 6). Length of loop depends on user input
             var cont = ""; //placeholder for set of numbers than we generated (ex. 11111) - this is index number for language word-list array
 
             for (j = 1; j <= 5; j++) {
@@ -76,13 +76,13 @@ function diceWare() {
 }
 
 function copyText() {
-    //copying text to clipboard part
+    //copying text to clipboard
     var text = document.getElementById("gen-result-p").innerText; //element to copy text from
 
     var elem = document.createElement("textarea"); //creating textarea so we can use 'elem.select()' when we really have text in '<p>' tag
     document.body.appendChild(elem);
     elem.value = text;
     elem.select();
-    document.execCommand("copy");
+    document.execCommand("copy"); //copying text
     document.body.removeChild(elem); //deleting textarea
 }
