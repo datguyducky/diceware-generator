@@ -29,7 +29,7 @@ h1 {
 
 header {
     margin-top: 60px;
-    height: 15vh;
+    min-height: 15vh;
     width: 960px;
     display: flex;
     justify-content: center;
@@ -349,4 +349,45 @@ footer a:hover {
     padding: 8px 12px;
     display: inline-block;
     border-radius: 6px;
+}
+
+/* media queries */
+@media (max-width: 1030px) {
+    #content-box, header, footer {
+        max-width: 90vw;
+    }
+
+    #content-box {
+        padding: 0;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 980px) {
+    #about-content {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+    
+    #about-right {
+        margin-top: 32px;
+        padding: 0;
+    }
+
+    #word-list {
+        display: block;
+    }
+
+    #word-list pre {
+        text-align: left;
+        margin-left:  0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 780px) {
+    header{
+        text-align: center;
+        margin-top: 90px;
+    }
 }
