@@ -8,6 +8,8 @@
     <title>Diceware Generator</title>
     <link rel="stylesheet" href="style.css">
 
+	<link rel="manifest" href="/manifest.json">
+
     <!-- SCRIPT TO GENERATE PASSPHRASE -->
     <!-- getting user input from number input and select tag - which we use to run script for x times and use specific world-list language file to show user x randomly selected words from that specific file.-->
     <script src="main.js"></script>
@@ -22,7 +24,6 @@
     <meta name="theme-color" content="#ffffff">
 
 </head>
-
 <body>
     <div id="content-box">
         <header>
@@ -96,7 +97,14 @@
 			Made with <span style="color: #EA1206;">❤️</span> by
 			<a href="https://github.com/datguysheepy/pare-down"> @datguysheepy</a>
 		</p>
-    </footer>
+	</footer>
+	<!-- service worker for PWA -->
+	<script>
+	if('serviceWorker' in navigator) {
+	navigator.serviceWorker
+			.register('/sw.js')
+			.then(function() { console.log("Service Worker Registered"); });
+	}
+	</script>
 </body>
-
 </html>
