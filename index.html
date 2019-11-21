@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -45,13 +45,9 @@
         </header>
         <nav>
             <ul>
-                <a href="#" class="active">
-                    <li>Generate</li>
-                </a>
+            	<li><a href="#" class="active">Generate</a></li>
                 <li class="nav-sep">/</li>
-                <a href="about.html">
-                    <li>About</li>
-                </a>
+            	<li><a href="about.html">About</a></li>
             </ul>
         </nav>
         <main>
@@ -66,7 +62,7 @@
                 <p id="error" class="colors">Minimum required number of words is 6, maximum 128</p>   
 
                 <div id="language-content">
-                    <p>Passphrase Language:
+                    <label for="languages">Passphrase Language:
                         <select id="languages">
                             <option value="zh">🇨🇳 Chinese</option>
                             <option value="eng" selected>🇺🇸 English (US)</option> <!-- selected by default -->
@@ -81,19 +77,19 @@
                             <option value="es">🇪🇸 Spanish</option>
                             <option value="sv">🇸🇪 Swedish</option>
                         </select>
-                    </p>
+                    </label>
                 </div>
             </div>
             <!-- SHOWING TOOLTIP ABOVE GENERATE AND COPY BUTTONS-->
             <div class="tooltip">
                 <dfn data-info="Generate passphrase">
-                    <button class="btn" onclick="diceWare()">
+                    <button class="btn" onclick="diceWare()" aria-label="Generate passphrase">
                         <i class="fas fa-sync"></i>
                     </button>
                 </dfn>
 
                 <dfn data-info="Copy to clipboard">
-                    <button class="btn" onclick="copyText()">
+                    <button class="btn" onclick="copyText()" aria-label="Copy to clipboard">
                         <i class="far fa-clipboard"></i>
                     </button>
                 </dfn>
@@ -106,7 +102,7 @@
     </div>
     <footer>
         <p>
-			Made with <span style="color: red;">❤️</span> by
+			Made with <span style="color: #EA1206;">❤️</span> by
 			<a href="https://github.com/datguysheepy/pare-down"> @datguysheepy</a>
 		</p>
     </footer>

@@ -56,12 +56,12 @@ nav {
 }
 
 nav a {
-    float: left;
-    padding: 2rem 1rem;
-    color: #7c7c7c;
+	padding: 0;
+    color: #6e6e6e;
     margin: 0;
     text-decoration: none;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	padding: 2px 6px;
 }
 
 nav ul {
@@ -72,7 +72,8 @@ nav ul {
 
 nav li {
     margin: 0;
-    padding: 0;
+	padding: 0;
+	float: left;
 }
 
 nav a:hover {
@@ -81,7 +82,7 @@ nav a:hover {
 
 .nav-sep {
     float: left;
-    padding: 2rem 1rem;
+    padding: 2px 6px;
 }
 
 .active {
@@ -128,6 +129,10 @@ input[type='number'] {
     width: 64px;
     border-radius: 4px;
     height: 24px;
+}
+
+#language-content {
+	margin: 1.2rem 0;
 }
 
 select {
