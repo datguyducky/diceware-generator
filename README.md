@@ -1,3 +1,9 @@
+> [!WARNING]  
+> This project is no longer maintained or hosted by me. It was created a long time ago when I was beginning to learn JavaScript.
+> I've decided to archive this repository as I have no plans to update it, and the code here likely does not follow current best practices.
+>
+> I'm leaving this repository public in case it might help someone in the future. However, please note that it is probably very outdated by the time you are reading this.
+
 # Diceware generator 🎲
 Using weak password or passphrase is still most common mistake users do when securing their accounts and because of that I decided to make this website to show people that creating and memorizing strong passwords/passphrases isn't really that hard.
 
